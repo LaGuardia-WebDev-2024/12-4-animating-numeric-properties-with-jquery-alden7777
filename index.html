@@ -9,8 +9,8 @@
 
     <button id="button1">Grow Larger</button>
     <button id="button2">Grow Smaller</button>
-    <button id="button3">Animation 3</button>
-    <button id="button4">Animation 4</button>
+    <button id="button3">Grow Border</button>
+    <button id="button4">Grow Text</button>
 
     <div class="avatar">
       <img
@@ -25,22 +25,30 @@
     
       // ======================== Button #1
       $("#button1").click(function () {
-       
+       $(".avatar").animate({
+        width: "900px"
+       })
       });
 
       // ======================== Button #2
       $("#button2").click(function () {
-     
+     $(".avatar").animate({
+        width: "170px"
+       })
       });
 
       // ======================== Button #3
       $("#button3").click(function () {
-    
+      $(".avatar").animate({
+        borderWidth: "170px"
+       })
       });
 
        // ======================== Button #3
       $("#button4").click(function () {
-    
+      $(".avatar").animate({
+        fontSize: "170px"
+       })
       });
     
     
